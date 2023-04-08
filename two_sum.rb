@@ -10,7 +10,7 @@ def two_sum(nums, target)
 
     (i + 1...size).each do |j|
       found = true if nums[i] + nums[j] == target
-      return [i, j] if found == true
+      return [i, j] if found
     end
   end
 end
