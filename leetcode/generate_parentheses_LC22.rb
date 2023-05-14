@@ -1,3 +1,5 @@
+require 'pry-byebug'
+
 # https://leetcode.com/problems/generate-parentheses/description/
 
 # Approach
@@ -57,3 +59,6 @@ def generate(open_count, close_count, str)
     generate(open_count, close_count-1, str2)
   end
 end
+
+
+puts generate_parenthesis(2)
