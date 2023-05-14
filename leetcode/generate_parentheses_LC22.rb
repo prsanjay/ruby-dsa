@@ -4,7 +4,7 @@ require 'pry-byebug'
 
 # Approach
 
-# This can be resolves using recursion and this is classic recursion problem
+# This can be resolved using recursion and this is classic recursion problem
 # The number of parenthesis pair is given. 1 pair = (), 2 pair = ()()
 # So in one pair the number of open_brackets will be one and closed_brackets will be one.
 # If number of pair is 2 then total brackets will be 4 and from that number of open_brackets will be 2 and number of closed_brackets will be 2
