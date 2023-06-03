@@ -1,6 +1,6 @@
 =begin
 
-The worst-case time complexity for various operations in a Singly Linked List is as follows:
+TIME COMPLEXITY
 
 1.  Insertion at the beginning (prepend): O(1) - Constant time complexity.
 2.  Insertion at the end (append): O(n) - Linear time complexity, as you need to traverse the entire list to reach the end.
@@ -12,6 +12,10 @@ The worst-case time complexity for various operations in a Singly Linked List is
 8.  Accessing an element at a specific position: O(n) - Linear time complexity, as you need to traverse the list to reach the desired position.
 
 In general, the time complexity of most operations in a Singly Linked List is O(n) because you may need to traverse the list from the beginning or a specific position to perform the desired operation.
+
+SPACE COPLEXITY
+
+The space complexity of a Singly Linked List can be expressed as O(n), where n is the number of nodes in the list. This is because the memory required by the list grows linearly with the number of nodes.
 
 =end
 
