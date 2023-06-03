@@ -1,3 +1,21 @@
+=begin
+
+The worst-case time complexity for various operations in a Singly Linked List is as follows:
+
+1.  Insertion at the beginning (prepend): O(1) - Constant time complexity.
+2.  Insertion at the end (append): O(n) - Linear time complexity, as you need to traverse the entire list to reach the end.
+3.  Insertion at a specific position: O(n) - Linear time complexity, as you need to traverse the list to reach the desired position.
+4.  Deletion from the beginning: O(1) - Constant time complexity.
+5.  Deletion from the end: O(n) - Linear time complexity, as you need to traverse the entire list to reach the end.
+6.  Deletion from a specific position: O(n) - Linear time complexity, as you need to traverse the list to reach the desired position.
+7.  Searching for an element: O(n) - Linear time complexity, as you may need to traverse the entire list to find the element.
+8.  Accessing an element at a specific position: O(n) - Linear time complexity, as you need to traverse the list to reach the desired position.
+
+In general, the time complexity of most operations in a Singly Linked List is O(n) because you may need to traverse the list from the beginning or a specific position to perform the desired operation.
+
+=end
+
+
 class Node
   attr_accessor :data, :next_node
 
