@@ -8,6 +8,8 @@ class StackQueue
 =begin
   In this implementation, we use two stacks @stack1 and @stack2. The enqueue method works by transferring all elements from @stack1 to @stack2, pushing the new item to @stack1, and then transferring back all elements from @stack2 to @stack1. This ensures that the elements are ordered correctly in the queue.
 
+  We need to do this because, Stack follows LIFO and Queue follows FIFO
+
   This method has O(N) time complexity
 =end
   def enqueue(data)
