@@ -214,6 +214,18 @@ class BinaryTree
       search_recursive(node.left, value) || search_recursive(node.right, value)
     end
   end
+
+  def count_of_nodes
+    recursive_count(@root)
+  end
+
+  def recursive_count(node)
+    return 0 if node.nil?
+
+    left_count = recursive_count(node.left)
+    right_count = recursive_count(node.right)
+    left_count + right_count + 1
+  end
 end
 
 tree = BinaryTree.new
@@ -242,4 +254,6 @@ puts "=== Tree height ==="
 p tree.height
 puts "=== Search the value ==="
 p tree.search(17)
+puts "=== Count of nodes ==="
+p tree.count_of_nodes
 
