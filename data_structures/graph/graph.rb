@@ -8,6 +8,10 @@ class Graph
     @adj_list = {}
   end
 
+  def add_vertex(vertex)
+    @adj_list[vertex] = []
+  end
+
   # Build the graph from the given edges so that you can perform a traversal on them.
   # the output will be : {source => [destination1, destination2]}
   # Space complexity will be O(|V| + 2|E|) where V is number of vertices and E is number of edges. Here, we mentioned, 2*|E| because, the edges can be 2-way, A->B and B->A
@@ -25,6 +29,23 @@ class Graph
     else
       @adj_list[destination] = [source]
     end
+  end
+
+  def remove_edge(source, destination)
+    @adj_list[source].delete(destination)
+    @adj_list[destination].delete(source)
+  end
+
+  # time-complexity: O(V+E), Removing a vertex involves removing its entry from the adjacency list and updating the adjacent vertices' lists.
+  # space-complexity: O(1), as it requires modifying the existing adjacency list.
+  def remove_vertex(vertex)
+    # First remove the given vertex from the neighbors of other vertices
+    # for example, the vertex to delete is 1 and list is {1=>[2,3], 2=>[1,4]}
+    # then before deleting the whole key with vertex "1", we need to remove neighbor "1" from the vertex 2.
+    @adj_list[vertex].each do |neighbor|
+      @adj_list[neighbor].delete(vertex)
+    end
+    @adj_list.delete(vertex)
   end
 
 =begin
