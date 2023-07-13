@@ -12,4 +12,8 @@ def binary_search(nums, target)
       right = mid-1
     end
   end
+  return -1
 end
+
+
+p binary_search([1,2,3,4,5], 6)
