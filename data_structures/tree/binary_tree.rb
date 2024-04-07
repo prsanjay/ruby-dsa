@@ -188,7 +188,7 @@ class BinaryTree
 =begin
 - The height of a binary tree is defined as the maximum number of edges in the longest path from the root node to any leaf node in the tree.
 - Here, we will find left-subtree height and right-subtree height and then find max from both and add one to it.
-- When we find the leaf node, we need to return -1 to balance out the overall height. If we return 0 then the height will become no of edges from root to leaf node + 1. so if the tree has only one node and if we return 0 then the height will become 1 which is wrong. Height of tree having one is zero and not one.
+- When we find the leaf node, we need to return -1 to balance out the overall height. If we return 0 then the height will become no of edges from root to leaf node + 1. so if the tree has only one node and if we return 0 then the height will become 1 which is wrong. Height of tree having one node is zero and not one.
 - Ref: https://www.youtube.com/watch?v=_pnqMz5nrRs
 =end
   def recursive_height(node)

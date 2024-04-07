@@ -52,7 +52,7 @@ class Graph
   # It is similar to level order traversal in Binary tree
   # We need to use queue data structure to store the vertices which we need to explore
   # We need to store the visited vertices in another data structure
-  # so the steps are visit the vertices, add to queue and explore other vertices
+  # so the steps are visit the vertices, add to queue and explore other vertices.
   # we only need to visit the vertices once
 =end
   def bfs(start_vertex, adj_list)
